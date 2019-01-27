@@ -1,13 +1,55 @@
 body {
-    font-family: helvetica, sans-serif;
-}
-
-#guess {
-    letter-spacing: 0.5rem;
-}
-
-section {
-    background-image: url('../images/hangman.png');
+    font-family: Helvetica, sans-serif;
+    text-align: center;
+    color: grey;
+    margin: 0;
+  }
+  
+  header {
+    padding: .5rem;
+    background-color: #FDD39C;
+    color: white;
+  }
+  
+  #guess {
+    font-size: 3rem;
+    letter-spacing: 0.7rem;
+    margin-bottom: 4rem;
+  }
+  
+  section {
+    background-image: url('../Images/hangman.png');
     width: 75px;
-    height: 200 px;
-}
+    height: 200px;
+    margin: 0 auto;
+  }
+  
+  #letters button, #replay {
+    padding: 5px;
+    width: 2rem;
+    font-size: 1.5rem;
+    margin: .2rem;
+    color: grey;
+    border: 2px solid grey;
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
+  }
+  
+  #replay {
+    width: 10rem;
+    margin-top: 2rem;
+  }
+  
+  button.wrong, button.correct {
+    pointer-events: none;
+    color: lightgrey;
+  }
+  
+  button.correct {
+    background-color: #85bb3a;
+  }
+  
+  button.wrong {
+    background-color: #FDD39C;
+  }
